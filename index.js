@@ -1,5 +1,6 @@
 
-  // index.js
-  import { saludar } from './saludo';
+  /*import { saludar } from './saludo';
   
-  saludar("Juan");
+  saludar("Juan");*/
+  // Llamada a la función
+  saludar("Juan", "masculino", 30);

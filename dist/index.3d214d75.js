@@ -574,48 +574,10 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 }
 
 },{}],"bB7Pu":[function(require,module,exports) {
-// index.js
-var _saludo = require("./saludo");
-(0, _saludo.saludar)("Juan");
-
-},{"./saludo":"gGpb6"}],"gGpb6":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "saludar", ()=>saludar);
-alert("Presiona OK si estas list@ para empezar con javascript");
-function saludar(nombre) {
-    console.log(`¡Hola, ${nombre}! ¡Bienvenido!`);
-}
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gkKU3":[function(require,module,exports) {
-exports.interopDefault = function(a) {
-    return a && a.__esModule ? a : {
-        default: a
-    };
-};
-exports.defineInteropFlag = function(a) {
-    Object.defineProperty(a, "__esModule", {
-        value: true
-    });
-};
-exports.exportAll = function(source, dest) {
-    Object.keys(source).forEach(function(key) {
-        if (key === "default" || key === "__esModule" || dest.hasOwnProperty(key)) return;
-        Object.defineProperty(dest, key, {
-            enumerable: true,
-            get: function() {
-                return source[key];
-            }
-        });
-    });
-    return dest;
-};
-exports.export = function(dest, destName, get) {
-    Object.defineProperty(dest, destName, {
-        enumerable: true,
-        get: get
-    });
-};
+/*import { saludar } from './saludo';
+  
+  saludar("Juan");*/ // Llamada a la función
+saludar("Juan", "masculino", 30);
 
 },{}]},["2UeK4","bB7Pu"], "bB7Pu", "parcelRequirec5ec")
 
